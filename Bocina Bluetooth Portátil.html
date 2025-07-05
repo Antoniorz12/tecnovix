@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bocina Bluetooth Portátil 3"</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Bocina.css" />
+</head>
+<body>
+  <header class="store-header">
+    <h1>Bocina Bluetooth Portátil 3"</h1>
+    <p>Altavoz con sonido 360°, luces RGB y batería de larga duración</p>
+  </header>
+
+  <main class="product-page">
+    <section class="gallery-section">
+      <div class="thumbnails">
+        <img src="img/Bocinas 3 Pulgadas2.jpg" onclick="changeImage(this)">
+        <img src="img/D_NQ_NP_2X_960486-MLM74903573960_032024-F-bocina-bluetooth-portatil-3-pulgadas-pack-10pz-mayoreo.webp" onclick="changeImage(this)">
+        <img src="img/D_NQ_NP_2X_752401-MLM75041972377_032024-F-bocina-bluetooth-portatil-3-pulgadas-pack-10pz-mayoreo.webp" onclick="changeImage(this)">
+        <img src="img/D_NQ_NP_2X_619566-MLM75041972395_032024-F-bocina-bluetooth-portatil-3-pulgadas-pack-10pz-mayoreo.webp" onclick="changeImage(this)">
+      </div>
+      <div class="main-image">
+        <img id="mainImage" src="img/Bocinas 3 Pulgadas2.jpg" alt="Imagen principal">
+      </div>
+    </section>
+
+    <section class="details-section">
+      <h2>Link Bits TWS</h2>
+
+      <div class="info-block">
+        <h3>Descripción</h3>
+        <p>Altavoz Bluetooth portátil con diseño moderno, luces RGB dinámicas y un potente sonido envolvente. Ideal para exteriores, reuniones y viajes.</p>
+      </div>
+
+      <div class="info-block">
+        <h3>Características</h3>
+        <ul>
+          <li>Bluetooth 5.0</li>
+          <li>Hasta 5 horas de duración</li>
+          <li>Color disponible: Azul</li>
+          <li>Diseño compacto y resistente</li>
+        </ul>
+      </div>
+
+      <div class="info-block price-block">
+        <h3>Precio</h3>
+        <p class="price">$250.00 MXN</p>
+      </div>
+
+      <a href="tienda.html" class="btn-more">← Volver a la tienda</a>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage" alt="Imagen en grande">
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Tecnovix. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="bocina.js"></script>
+</body>
+</html>

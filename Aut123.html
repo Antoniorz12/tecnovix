@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bocina Bluetooth Portátil 3"</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Bocina.css" />
+</head>
+<body>
+  <header class="store-header">
+    <h1>Audifonos Manos Libres Aut123</h1>
+    <p>MODELO AUT123</p>
+  </header>
+
+  <main class="product-page">
+    <section class="gallery-section">
+      <div class="thumbnails">
+        <img src="img/1Hora-Manos Libres.webp" onclick="changeImage(this)">
+        <img src="img/D_NQ_NP_2X_916707-MLM80076897898_102024-F-lote-10-pzs-audifono-manos-libres-1hora-aut123-mayoreo.webp" onclick="changeImage(this)">
+        <img src="img/10.webp" onclick="changeImage(this)">
+      </div>
+      <div class="main-image">
+        <img id="mainImage" src="img/1Hora-Manos Libres.webp" alt="Imagen principal">
+      </div>
+    </section>
+
+    <section class="details-section">
+      <h2>Audifonos Manos Libres Aut123</h2>
+
+      <div class="info-block">
+        <h3>Descripción</h3>
+        <p>MODELO AUT123 CUENTA CON UN CONECTOR DE 3.5MM, COMPATIBLE CON UNA AMPLIA GAMA DE DISPOSITIVOS, INCLUYENDO SMARTPHONES, TABLETS, LAPTOPS Y REPRODUCTORES DE MÚSICA. SU DISEÑO ERGONÓMICO ASEGURA UN AJUSTE CÓMODO Y SEGURO, PERMITIÉNDOTE USARLOS DURANTE LARGOS PERIODOS SIN MOLESTIAS.</p>
+      </div>
+
+      <div class="info-block">
+        <h3>Características</h3>
+        <ul>
+          <li>Fabricante: 1Hora</li>
+          <li>Marca: 1Hora</li>
+          <li>Línea: In-Ear</li>
+          <li>Modelo: AUT123</li>
+          <li>Modelo alfanumérico: AUT123</li>
+          <li>Con micrófono: Sí</li>
+        </ul>
+      </div>
+
+      <div class="info-block price-block">
+        <h3>Precio</h3>
+        <p class="price">$100.00 MXN</p>
+      </div>
+
+      <a href="tienda.html" class="btn-more">← Volver a la tienda</a>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage" alt="Imagen en grande">
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 Tecnovix. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="bocina.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda Tecnovix</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="tienda.css" />
+</head>
+<body>
+  <header class="store-header">
+    <h1>Tienda Tecnovix</h1>
+    <p>Productos electrónicos seleccionados para ti</p>
+    <main class="store-main">
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="🔍 Buscar producto..." onkeyup="filtrarProductos()" />
+  </div>
+  </header>
+
+  <main class="store-container" id="productList">
+    <div class="product-card" onclick="location.href='Bocina Bluetooth Portátil.html'">
+        <img src="img/Bocinas 3 Pulgadas2.jpg" alt="Bocina Bluetooth">
+        <h3>Link bits TWS</h3>
+        <h3>Bocina Bluetooth Portátil 3"</h3>
+        <p>Disponible un solo color</p>
+        <span class="price">$250.00 MXN</span>
+    </div>
+
+
+    <div class="product-card" onclick="location.href='Aut123.html'">
+      <img src="img/Audifono Manos Libres 1hora Aut123.jpg" alt="Audifono Aut123">
+      <h3>Hora</h3>
+      <h3>Audífono Manos Libres Aut123</h3>
+      <p>Disponible en 2 colores</p>
+      <span class="price">$100.00 MXN</span>
+    </div>
+
+    <div class="product-card" onclick="location.href='producto3.html'">
+      <img src="img/Auriculares A6S TWS Inalámbricos Bluetooth 5,0 .png" alt="A6S TWS">
+      <h3>Auriculares A6S TWS</h3>
+      <p>Disponible en un</p>
+      <span class="price">$120.00 MXN</span>
+    </div>
+
+    <div class="product-card" onclick="location.href='producto4.html'">
+      <img src="img/Captura de pantalla 2025-06-29 225210.png" alt="A6S TWS">
+      <h3>TWS</h3>
+      <h3>Auriculares inalámbricos Bluetooth</h3>
+      <p>Disponible en 3 colores</p>
+      <span class="price">$250.00 MXN</span>
+    </div>
+
+    <div class="product-card" onclick="location.href='producto4.html'">
+      <img src="img/Captura de pantalla 2025-06-30 012525.png" alt="A6S TWS">
+      <h3>TWS</h3>
+      <h3>Auriculares inalámbricos Bluetooth TWS</h3>
+      <p>Disponible en 3 colores</p>
+      <span class="price">$150.00 MXN</span>
+    </div>
+
+    <!-- Puedes duplicar más productos aquí -->
+     <a href="index.html" class="btn-more">← Volver al inicio</a>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Tecnovix. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="Tienda.js"></script>
+</body>
+</html>

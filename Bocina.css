@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f7fb;
+  color: #333;
+}
+
+.store-header {
+  background: linear-gradient(135deg, #007BFF, #00C9A7);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.product-page {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px auto;
+  gap: 40px;
+  padding: 0 20px;
+}
+
+.gallery-section {
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.main-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.thumbnails img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.thumbnails img:hover {
+  transform: scale(1.05);
+  border-color: #00C9A7;
+}
+
+.details-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.details-section h2 {
+  font-size: 2rem;
+  color: #007BFF;
+  margin-top: 0;
+}
+
+.info-block {
+  margin-bottom: 20px;
+}
+
+.info-block h3 {
+  color: #00C9A7;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.info-block ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00C9A7;
+}
+
+.btn-more {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-more:hover {
+  background-color: #005bb5;
+}
+
+.footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #222;
+  color: white;
+  margin-top: 50px;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 12px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
